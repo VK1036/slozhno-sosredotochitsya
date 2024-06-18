@@ -19,7 +19,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin: 0 auto;
 }
 
 ul {
@@ -35,8 +35,13 @@ picture {
 
 button,
 a {
+  inline-size: 70px;
+  block-size: 26px;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background: none;
+  border: none;
+  padding: 0;
 }

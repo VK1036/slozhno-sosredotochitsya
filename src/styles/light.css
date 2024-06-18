@@ -10,3 +10,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+/* :root {
+  --main-text-color: #353430;
+}  
+
+.button {
+  color: var(--main-text-color, #353430);
+}
+*/
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--main-text-color, #353430);
+  outline-offset: -1px;
+  pointer-events: none;
+}
