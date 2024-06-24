@@ -11,24 +11,187 @@
   */
 }
 
-/* :root {
+.theme_dark {
   --main-font: 'IBM Plex mono';
   --main-text-color: #f1b2ce;
   --bg-color: #000028;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
+  --focus-color: #ff0070;
+  --hover-color: rgb(255 0 112 / 0.4);
+  --heading-text-color: #ff0070;
   --main-text-size: 18px;
   --head-text-size: 116px;
-  --head-text-color: #DB00FF;
+  --head-text-color: #db00ff;
+  --bg-img: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header_rec {
+  position: absolute;
+  right: 6px;
+  top: 11px;
+  font-size: var(--main-text-size, 18px);
+  font-family: var(--main-font, 'IBM Plex mono');
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .header_rec::after {
+  display: inline-block;
+  content: '';
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: var(--accent-color, #ff0070);
+  border-radius: 50%;
+  filter: blur(2px); /* размытие границ у круга */
+  /* padding-inline-start: 5px; */
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --main-font: 'IBM Plex mono';
+    --main-text-color: #f1b2ce;
+    --bg-color: #000028;
+    --accent-color: #ff0070;
+    --accent-text-color: #000028;
+    --focus-color: #ff0070;
+    --hover-color: rgb(255 0 112 / 0.4);
+    --heading-text-color: #ff0070;
+    --main-text-size: 18px;
+    --head-text-size: 116px;
+    --head-text-color: #db00ff;
+    --bg-img: url(../images/cover-image-dark.png);
+  }
+
+  .theme_dark .header_rec {
+    position: absolute;
+    right: 6px;
+    top: 11px;
+    font-size: var(--main-text-size, 18px);
+    font-family: var(--main-font, 'IBM Plex mono');
+    color: var(--accent-color, #ff0070);
+  }
+
+  .theme_dark .header_rec::after {
+    display: inline-block;
+    content: '';
+    inline-size: 15px;
+    block-size: 15px;
+    background-color: var(--accent-color, #ff0070);
+    border-radius: 50%;
+    filter: blur(2px); /* размытие границ у круга */
+    /* padding-inline-start: 5px; */
+  }
+
+  .theme_auto .header_rec {
+    position: absolute;
+    right: 6px;
+    top: 11px;
+    font-size: var(--main-text-size, 18px);
+    font-family: var(--main-font, 'IBM Plex mono');
+    color: var(--accent-color, #ff0070);
+  }
+
+  .theme_auto .header_rec::after {
+    display: inline-block;
+    content: '';
+    inline-size: 15px;
+    block-size: 15px;
+    background-color: var(--accent-color, #ff0070);
+    border-radius: 50%;
+    filter: blur(2px);
+  }
+}
+
+/* .page {
+  color: var(--main-text-color, #f1b2ce);
+  background-color: var(--bg-color, #000028);
+  font-family: var(--main-font, 'IBM Plex mono');
+  background-image: url(../images/cover-image-dark.png);
 }
 
 .button {
   color: var(--accent-color, #ff0070);
 }
-*/
+
+.header__theme-menu-button:hover {
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+  /* outline-offset: -1px; 
+}
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--accent-color, #ff0070);
   outline-offset: -1px;
   pointer-events: none;
 }
+
+.title {
+  line-height: 95.7px;
+  color: var(--head-text-color, #DB00FF);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+
+.theme_dark .header_rec {
+  position: absolute;
+  right: 6px;
+  top: 11px;
+  font-size: var(--main-text-size, 18px);
+  font-family: var(--main-font, "IBM Plex mono");
+  color: var(--accent-color,#ff0070);
+}
+
+.header_rec::after {
+  display: inline-block;
+  content: "";
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: var(--accent-color,#FF0070);
+  border-radius: 50%;
+  filter: blur(2px); /* размытие границ у круга */
+/* padding-inline-start: 5px; 
+}
+
+.header__description {
+  color: var(--accent-text-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+}
+
+.heading {
+  color: var(--accent-color, #ff0070);
+}
+
+.content__title {
+  color: var(--accent-text-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+}
+
+.content__text a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 2px 2px var(--accent-color, #ff0070);
+}
+
+a:hover{
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--accent-color, #ff0070);
+  outline-offset: -1px;
+}
+
+.advice__title {
+  color: var(--main-text-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+}
+*/

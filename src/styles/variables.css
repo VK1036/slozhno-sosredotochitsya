@@ -9,13 +9,11 @@
   --bg-color: #000028;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
+  --focus-color: #ff0070;
+  --hover-color: rgb(255 0 112 / 0.4);
+  --heading-text-color: #ff0070;
   --main-text-size: 18px;
   --head-text-size: 116px;
   --head-text-color: #db00ff;
+  --bg-img: url(../images/cover-image-dark.png);
 }
-
-/* для светлой темы
---main-text-color: #353430;
---bg-color: #FFF1F7;
---bg-color: #FFF1F7;
---accent-color: #FF8DCB;*/
