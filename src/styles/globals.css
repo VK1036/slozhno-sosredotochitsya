@@ -9,6 +9,10 @@
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
+  background-image: var(--bg-img, url(../images/cover-image-light.png));
+  background-attachment: fixed; /* фон перемещается при прокрутке */
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0 auto;
 }
 
