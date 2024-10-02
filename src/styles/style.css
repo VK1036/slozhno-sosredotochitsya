@@ -24,7 +24,47 @@
   padding-inline-end: 10px;
 }
 
-.button {
+.header_rec {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-size: var(--main-text-size, 18px);
+  font-family: var(--main-font, 'IBM Plex mono');
+  text-transform: uppercase;
+  color: var(--accent-color, #ff0070);
+}
+
+.header_rec::after {
+  display: inline-block;
+  content: '';
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: var(--accent-color, #ff0070);
+  border-radius: 50%;
+  filter: blur(2px); /* размытие границ у круга */
+  /* padding-inline-start: 5px; */
+}
+
+.theme_auto .header_rec {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-size: var(--main-text-size, 18px);
+  font-family: var(--main-font, 'IBM Plex mono');
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_auto .header_rec::after {
+  display: inline-block;
+  content: '';
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: var(--accent-color, #ff0070);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+button {
   color: var(--accent-color, #ff0070);
 }
 
@@ -140,6 +180,7 @@
 .content__title {
   padding: 0;
   margin-block-end: 10px;
+  font-size: var(--main-text-size);
   color: var(--accent-text-color, #000028);
   background-color: var(--accent-color, #ff0070);
   line-height: 23.4px;
@@ -206,7 +247,7 @@ a:focus-visible {
 .footer {
   position: relative;
   block-size: 100vh;
-  max-height: 667px;
+  min-height: 667px;
   margin-block-start: 42px;
 }
 

@@ -27,43 +27,22 @@
 }
 
 .theme_dark .header_rec {
-  position: absolute;
-  right: 15px;
-  top: 11px;
-  font-size: var(--main-text-size, 18px);
-  font-family: var(--main-font, 'IBM Plex mono');
-  color: var(--accent-color, #ff0070);
+  display: inline-block;
 }
 
 .theme_dark .header_rec::after {
   display: inline-block;
-  content: '';
-  inline-size: 15px;
-  block-size: 15px;
-  background-color: var(--accent-color, #ff0070);
-  border-radius: 50%;
-  filter: blur(2px); /* размытие границ у круга */
-  /* padding-inline-start: 5px; */
 }
 
-@media (prefers-color-scheme: dark) {
+.theme_auto .header_rec {
+  display: inline-block;
+}
 
-  :root {
-    --main-font: 'IBM Plex mono';
-    --main-text-color: #f1b2ce;
-    --bg-color: #000028;
-    --accent-color: #ff0070;
-    --accent-text-color: #000028;
-    --focus-color: #ff0070;
-    --hover-color: rgb(255 0 112 / 0.4);
-    --heading-text-color: #ff0070;
-    --main-text-size: 18px;
-    --head-text-size: 116px;
-    --head-text-color: #db00ff;
-    --bg-img: url(../images/cover-image-dark.png);
-  }
+.theme_auto .header_rec::after {
+  display: inline-block;
+}
 
-  .theme_dark .header_rec {
+/* .theme_dark .header_rec {
     position: absolute;
     right: 6px;
     top: 11px;
@@ -80,7 +59,7 @@
     background-color: var(--accent-color, #ff0070);
     border-radius: 50%;
     filter: blur(2px); /* размытие границ у круга */
-    /* padding-inline-start: 5px; */
+/* padding-inline-start: 5px; 
   }
 
   .theme_auto .header_rec {
@@ -101,7 +80,7 @@
     border-radius: 50%;
     filter: blur(2px);
   }
-}
+} */
 
 @media (375px <= width <= 768px) {
 
