@@ -17,8 +17,11 @@
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
   --accent-text-color: #353430;
-  --focus-color: #353430;
-  --hover-color: #31322d;
+  --active-color: #353430;
+  --focus-color: #ff0070;
+  --hover-color: rgb(255 0 112 / 1);
+  --angle-color: #353430;
+  --link-color: #353430;
   --heading-text-color: #353430;
   --main-text-size: 18px;
   --head-text-size: 116px;
@@ -38,8 +41,11 @@
     --bg-color: #fff1f7;
     --accent-color: #ff8dcb;
     --accent-text-color: #353430;
-    --focus-color: #353430;
-    --hover-color: #31322d;
+    --active-color: #353430;
+    --focus-color: #ff0070;
+    --hover-color: rgb(255 0 112 / 1);
+    --link-color: #353430;
+    --angle-color: #353430;
     --heading-text-color: #353430;
     --main-text-size: 18px;
     --head-text-size: 116px;

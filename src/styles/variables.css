@@ -9,8 +9,11 @@
   --bg-color: #000028;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
-  --focus-color: #ff0070;
-  --hover-color: rgb(255 0 112 / 0.4);
+  --active-color: #ff0070;
+  --focus-color: #353430;
+  --hover-color: rgb(50 49 45 / 0.4);
+  --angle-color: #ff0070;
+  --link-color: #f1b2ce;
   --heading-text-color: #ff0070;
   --main-text-size: 18px;
   --head-text-size: 116px;

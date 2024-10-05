@@ -17,8 +17,11 @@
   --bg-color: #000028;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
-  --focus-color: #ff0070;
-  --hover-color: rgb(255 0 112 / 0.4);
+  --active-color: #ff0070;
+  --focus-color: #353430;
+  --hover-color: rgb(50 49 45 / 0.4);
+  --angle-color: #ff0070;
+  --link-color: #f1b2ce;
   --heading-text-color: #ff0070;
   --main-text-size: 18px;
   --head-text-size: 116px;
@@ -40,6 +43,21 @@
 
 .theme_auto .header_rec::after {
   display: inline-block;
+}
+
+@media (width >= 768px) {
+
+  .theme_dark .header_rec {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+
+  .theme_auto .header_rec {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
 }
 
 /* .theme_dark .header_rec {
@@ -81,21 +99,3 @@
     filter: blur(2px);
   }
 } */
-
-@media (375px <= width <= 768px) {
-
-  .theme_dark .header_rec {
-    position: absolute;
-    right: 25px;
-    top: 20px;
-  }
-}
-
-@media (width > 768px) {
-
-  .theme_dark .header_rec {
-    position: absolute;
-    right: 25px;
-    top: 20px;
-  }
-}
