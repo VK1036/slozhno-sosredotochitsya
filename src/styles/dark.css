@@ -45,21 +45,6 @@
   display: inline-block;
 }
 
-@media (width >= 768px) {
-
-  .theme_dark .header_rec {
-    position: absolute;
-    right: 25px;
-    top: 20px;
-  }
-
-  .theme_auto .header_rec {
-    position: absolute;
-    right: 25px;
-    top: 20px;
-  }
-}
-
 /* .theme_dark .header_rec {
     position: absolute;
     right: 6px;
