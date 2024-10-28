@@ -44,27 +44,8 @@
   filter: blur(2px); /* размытие границ у круга */
 }
 
-/* .header_rec {
-  position: absolute;
-  right: 15px;
-  top: 11px;
-  font-size: var(--main-text-size, 18px);
-  font-family: var(--main-font, 'IBM Plex mono', monospace);
-  color: var(--accent-color, #ff0070);
-}
-
-.header_rec::after {
-  display: inline-block;
-  content: '';
-  inline-size: 15px;
-  block-size: 15px;
-  background-color: var(--accent-color, #ff0070);
-  border-radius: 50%;
-  filter: blur(2px);
-} */
-
 button {
-  color: var(--accent-color, #ff0070);
+  color: var(--button-color, #ff0070);
 }
 
 .header__theme-menu-button {
@@ -72,7 +53,7 @@ button {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-color, rgb(50 49 45 / 0.4));
+  outline: 1px solid var(--hover-color, rgb(255 0 112 / 0.4));
   outline-offset: -1px;
   cursor: pointer;
 }
@@ -84,11 +65,11 @@ button {
 }
 
 .header__theme-menu-button:focus {
-  border-block-end: 1px solid var(--focus-color, #353430);
+  border-block-end: 1px solid var(--focus-color, #ff0070);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--focus-color, #353430);
+  border-block-end: 1px solid var(--focus-color, #ff0070);
   outline: none;
 }
 
@@ -166,7 +147,7 @@ button {
   padding-block-end: 20px;
 }
 
-.content__section {
+.all__content {
   padding-inline-start: 10px;
   padding-inline-end: 10px;
 }
@@ -190,7 +171,11 @@ button {
   line-height: 23.4px;
 }
 
-.basis__content_element:not(:last-of-type) {
+.content__text:not(:last-of-type) {
+  margin-block-end: 10px;
+}
+
+.card:not(:last-of-type) {
   margin-block-end: 20px;
 }
 
@@ -218,21 +203,13 @@ a:focus-visible {
   margin-block-end: 20px;
 }
 
-.advice .content__title {
-  margin-block-end: 18px;
-}
-
-.advice__title {
-  padding: 0;
-  margin-block-end: 10px;
-  font-size: var(--main-text-size, 18px);
-  font-weight: 400;
-  color: var(--accent-text-color, #000028);
-  background-color: var(--accent-color, #ff0070);
-}
-
-.advice__content_element:not(:last-of-type) {
+.advice__content .content__title {
   margin-block-end: 20px;
+}
+
+.advice-card .content__title {
+  font-weight: normal;
+  margin-block-end: 10px;
 }
 
 .content__images {
@@ -254,6 +231,10 @@ a:focus-visible {
   block-size: 100vh;
   min-height: 667px;
   margin-block-start: 42px;
+  margin-block-end: 0;
+}
+
+.footer .title {
   margin-block-end: 0;
 }
 
@@ -309,7 +290,7 @@ a:focus-visible {
     padding-block-end: 0;
   }
 
-  .content__section {
+  .all__content {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
   }
@@ -318,48 +299,29 @@ a:focus-visible {
     margin-block-end: 80px;
   }
 
-  .basis {
+  .content__section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    grid-template-areas: 'heading content';
+    /* grid-template-areas: 'heading content'; */
   }
 
-  .basis__title {
-    grid-area: heading;
+  .content__section .heading {
+    /* grid-area: heading; */
     align-self: first baseline;
   }
 
-  .basis__content {
-    grid-area: content;
+  .section-reasons {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr min-content;
   }
 
-  .reasons {
-    display: grid;
-    /* grid-template-rows: 70px 1fr; */
-    gap: 20px;
+  .section-reasons .heading {
+    grid-column: span 1;
   }
 
-  .reasons__title {
-    max-inline-size: 236px;
-    justify-self: first baseline;
-    margin: 0;
-  }
-
-  .advice {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    grid-template-areas: 'heading content';
-  }
-
-  .advice__head_title {
-    grid-area: heading;
-    align-self: first baseline;
-  }
-
-  .advice__content {
-    grid-area: content;
+  .section-reasons .content {
+    grid-column: span 3;
   }
 
   .content__images {
@@ -433,30 +395,27 @@ a:focus-visible {
     margin: 51px 0 0;
   }
 
+  .content__section {
+    gap: 10px;
+  }
+
   .heading {
-    padding-block-end: 20px;
+    padding-block-end: 10px;
   }
 
-  .basis {
-    grid-template-columns: 314px 1fr;
+  .section-reasons {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr min-content;
   }
 
-  .reasons {
-    display: inline-block;
+  .section-reasons .heading {
+    grid-column: span 1;
   }
 
-  .reasons__title {
-    max-inline-size: 315px;
-  }
-
-  .reasons__content {
+  .section-reasons .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-
-  .advice {
-    grid-template-columns: 315px 1fr;
   }
 
   .picture {
