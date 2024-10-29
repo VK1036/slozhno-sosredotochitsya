@@ -15,7 +15,7 @@
 .header {
   position: relative;
   block-size: 100vh;
-  max-block-size: 668px;
+  min-block-size: 668px;
   margin-block-end: 40px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -242,7 +242,7 @@ a:focus-visible {
 
   .header {
     block-size: 100vh;
-    max-block-size: 1024px;
+    min-block-size: 1024px;
     /* min-inline-size: calc(100vw - 20px); вычитаем паддинши */
     position: relative;
     padding-inline-start: 0;
@@ -368,7 +368,7 @@ a:focus-visible {
 @media (width >= 1024px) {
 
   .header {
-    max-block-size: 768px;
+    min-block-size: 768px;
   }
 
   .header__theme-menu {
@@ -391,7 +391,6 @@ a:focus-visible {
   }
 
   .header__description {
-    min-block-size: 71px;
     margin: 51px 0 0;
   }
 
